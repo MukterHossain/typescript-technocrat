@@ -16,6 +16,7 @@
       private  getBalance(){
             return this._balance
         }
+        
         getHiddenMethod(){
             return this.getBalance()
         }
@@ -34,7 +35,8 @@
     const result1 = new BankAccount(111, 'Mr. X', 20)
 
     result1.addDeposit(2500)
-    const myBalance = result1.getBalance()
+    const myBalance = result1
+    // const myBalance = result1.getBalance()
     console.log(myBalance)
 
 
